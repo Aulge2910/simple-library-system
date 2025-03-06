@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Demo Web2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <!-- CSS references -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fonts/poppins/poppins.css">
+        <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet">
+
+
+        <!-- JS references -->
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- GSAP references -->
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+
+        <!-- typing effect -->
+        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    
+
+    </head>
+    <body>    
+
+    <!--Back to Top -->
+    <div class="back-top">
+        <i class="text-center bi-arrow-up label-up"></i>
+        <span class="label-up">Back To Top</span>
+    </div>
+        
+
+    <!-- header  -->
+    <header class="container-fluid d-flex" id="header">
+        <nav class="container navbar navbar-expand-lg w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-auto mb-2 mb-lg-0 fs-lg-5 gap-lg-2 gal-md-1 gap-sm-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                     
+                        <a href = "index.php" role="button" class="btn btn-outline-dark" type="">Dashboard</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!-- divider  -->
+    <div class="my-divider"></div>
+    
+
+
+    <!-- welcome-box  == intro box  -->
+    <section class="container" id="welcome-box">
+        <div class="welcome-box align-items-stretch">
+            <div class="welcome-box__right d-flex">
+                <div class="welcome-box__img mx-auto my-auto">
+                    <img src="./img/book1.png">   
+                </div>
+            </div>
+            <div class="welcome-box__left">
+                <h1 class="display-1 fw-bold"></h1> 
+                <span class="d-block w-lg-50 w-100 my-lg-4 my-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, odio.
+                </span>
+
+                <a href="#" role="button" class="button my-lg-2 my-2 button--bg-to-right text--up link-none-decoration">
+                    <span class="label--up">Let's Go</span>
+                    <span class="label--up">Get Started</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- divider  -->
+    <div class="my-divider"></div>
+
+
+    <!-- automated infinite horizontal scroll   -->
+    <section class="infinite-scroll-box infinite-scroll-box--primary-dark-grey">
+        <div class="infinite-scroll-box__content gap-4 container py-lg-3 py-md-1 " style="background-color: orange;">
+            <div class="infinite-scroll-box__content-item">Harry Potter</div>
+            <div class="infinite-scroll-box__content-item">Little Women</div>
+            <div class="infinite-scroll-box__content-item">Charilie And The Chocolate Factory</div>
+            <div class="infinite-scroll-box__content-item">Matilda</div>
+            <div class="infinite-scroll-box__content-item">Goodnight Moon</div>
+            <div class="infinite-scroll-box__content-item">The Secret Garden</div>
+        </div>
+    </section>  
+
+
+    <!-- divider  -->
+    <div class="my-divider"></div>
+
+        
+    <!-- services-box  -->
+    <section class="container">
+        <div class="services-box gap-lg-4 gap-md-4 gap-2 ">
+            <div class="services-box__top">
+                <h3>Save Time Managing Your Books</h3>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laudantium dicta excepturi illo.</span>
+            </div>
+            <div class="services-box__bottom gap-lg-5 gap-md-4 gap-3">
+                <div class="services-box__item gap-lg-4 gap-2 services-box__item--blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 24 24">             
+                        <path class="services-box__icon services-box__icon--blue" fill="#1C274D" fill-rule="evenodd" d="M4.727 2.712c.306-.299.734-.494 1.544-.6C7.105 2.002 8.209 2 9.793 2h4.414c1.584 0 2.688.002 3.522.112.81.106 1.238.301 1.544.6.305.3.504.72.613 1.513.112.817.114 1.899.114 3.45v7.839H7.346c-.903 0-1.519-.001-2.047.138-.472.124-.91.326-1.299.592V7.676c0-1.552.002-2.634.114-3.451.109-.793.308-1.213.613-1.513Zm2.86 3.072a.82.82 0 0 0-.828.81c0 .448.37.811.827.811h8.828a.82.82 0 0 0 .827-.81.82.82 0 0 0-.827-.811H7.586Zm-.828 4.594c0-.447.37-.81.827-.81h5.517a.82.82 0 0 1 .828.81.82.82 0 0 1-.828.811H7.586a.82.82 0 0 1-.827-.81Z" clip-rule="evenodd"/>
+                        <path class="services-box__icon services-box__icon--blue" fill="#1C274D" d="M7.473 17.135c-1.079 0-1.456.007-1.746.083a2.464 2.464 0 0 0-1.697 1.538c.016.382.043.719.084 1.019.109.793.308 1.213.613 1.513.306.299.734.494 1.544.6.834.11 1.938.112 3.522.112h4.414c1.584 0 2.688-.002 3.522-.111.81-.107 1.238-.302 1.544-.601.216-.213.38-.486.495-.91H7.586a.82.82 0 0 1-.827-.81c0-.448.37-.811.827-.811H19.97c.02-.466.027-1 .03-1.622H7.472Z"/>
+                      </svg>         
+                    <h3>Lorem Ipsum</h3>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+                <div class="services-box__item gap-lg-4  gap-2 services-box__item--navy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 24 24">            
+                        <path class="services-box__icon services-box__icon--navy" fill="#1C274D" fill-rule="evenodd" d="M4.727 2.712c.306-.299.734-.494 1.544-.6C7.105 2.002 8.209 2 9.793 2h4.414c1.584 0 2.688.002 3.522.112.81.106 1.238.301 1.544.6.305.3.504.72.613 1.513.112.817.114 1.899.114 3.45v7.839H7.346c-.903 0-1.519-.001-2.047.138-.472.124-.91.326-1.299.592V7.676c0-1.552.002-2.634.114-3.451.109-.793.308-1.213.613-1.513Zm2.86 3.072a.82.82 0 0 0-.828.81c0 .448.37.811.827.811h8.828a.82.82 0 0 0 .827-.81.82.82 0 0 0-.827-.811H7.586Zm-.828 4.594c0-.447.37-.81.827-.81h5.517a.82.82 0 0 1 .828.81.82.82 0 0 1-.828.811H7.586a.82.82 0 0 1-.827-.81Z" clip-rule="evenodd"/>
+                        <path class="services-box__icon services-box__icon--navy" fill="#1C274D" d="M7.473 17.135c-1.079 0-1.456.007-1.746.083a2.464 2.464 0 0 0-1.697 1.538c.016.382.043.719.084 1.019.109.793.308 1.213.613 1.513.306.299.734.494 1.544.6.834.11 1.938.112 3.522.112h4.414c1.584 0 2.688-.002 3.522-.111.81-.107 1.238-.302 1.544-.601.216-.213.38-.486.495-.91H7.586a.82.82 0 0 1-.827-.81c0-.448.37-.811.827-.811H19.97c.02-.466.027-1 .03-1.622H7.472Z"/>
+                      </svg>        
+                    <h3>Lorem Ipsum</h3>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+                <div class="services-box__item gap-lg-4 gap-2 services-box__item--yellow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 24 24">            
+                        <path class="services-box__icon services-box__icon--yellow" fill="#1C274D" fill-rule="evenodd" d="M4.727 2.712c.306-.299.734-.494 1.544-.6C7.105 2.002 8.209 2 9.793 2h4.414c1.584 0 2.688.002 3.522.112.81.106 1.238.301 1.544.6.305.3.504.72.613 1.513.112.817.114 1.899.114 3.45v7.839H7.346c-.903 0-1.519-.001-2.047.138-.472.124-.91.326-1.299.592V7.676c0-1.552.002-2.634.114-3.451.109-.793.308-1.213.613-1.513Zm2.86 3.072a.82.82 0 0 0-.828.81c0 .448.37.811.827.811h8.828a.82.82 0 0 0 .827-.81.82.82 0 0 0-.827-.811H7.586Zm-.828 4.594c0-.447.37-.81.827-.81h5.517a.82.82 0 0 1 .828.81.82.82 0 0 1-.828.811H7.586a.82.82 0 0 1-.827-.81Z" clip-rule="evenodd"/>
+                        <path class="services-box__icon services-box__icon--yellow" fill="#1C274D" d="M7.473 17.135c-1.079 0-1.456.007-1.746.083a2.464 2.464 0 0 0-1.697 1.538c.016.382.043.719.084 1.019.109.793.308 1.213.613 1.513.306.299.734.494 1.544.6.834.11 1.938.112 3.522.112h4.414c1.584 0 2.688-.002 3.522-.111.81-.107 1.238-.302 1.544-.601.216-.213.38-.486.495-.91H7.586a.82.82 0 0 1-.827-.81c0-.448.37-.811.827-.811H19.97c.02-.466.027-1 .03-1.622H7.472Z"/>
+                      </svg>
+                    <h3>Lorem Ipsum</h3>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+                <div class="services-box__item gap-lg-4 gap-2 services-box__item--orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 24 24">     
+                        <path class="services-box__icon services-box__icon--orange" fill="#1C274D" fill-rule="evenodd" d="M4.727 2.712c.306-.299.734-.494 1.544-.6C7.105 2.002 8.209 2 9.793 2h4.414c1.584 0 2.688.002 3.522.112.81.106 1.238.301 1.544.6.305.3.504.72.613 1.513.112.817.114 1.899.114 3.45v7.839H7.346c-.903 0-1.519-.001-2.047.138-.472.124-.91.326-1.299.592V7.676c0-1.552.002-2.634.114-3.451.109-.793.308-1.213.613-1.513Zm2.86 3.072a.82.82 0 0 0-.828.81c0 .448.37.811.827.811h8.828a.82.82 0 0 0 .827-.81.82.82 0 0 0-.827-.811H7.586Zm-.828 4.594c0-.447.37-.81.827-.81h5.517a.82.82 0 0 1 .828.81.82.82 0 0 1-.828.811H7.586a.82.82 0 0 1-.827-.81Z" clip-rule="evenodd"/>
+                        <path class="services-box__icon services-box__icon--orange" fill="#1C274D" d="M7.473 17.135c-1.079 0-1.456.007-1.746.083a2.464 2.464 0 0 0-1.697 1.538c.016.382.043.719.084 1.019.109.793.308 1.213.613 1.513.306.299.734.494 1.544.6.834.11 1.938.112 3.522.112h4.414c1.584 0 2.688-.002 3.522-.111.81-.107 1.238-.302 1.544-.601.216-.213.38-.486.495-.91H7.586a.82.82 0 0 1-.827-.81c0-.448.37-.811.827-.811H19.97c.02-.466.027-1 .03-1.622H7.472Z"/>
+                      </svg>      
+                    <h3>Lorem Ipsum</h3>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- divider  -->
+    <div class="my-divider"></div>
+
+
+
+
+    </section>
+    <!-- divider  -->
+    <div class="my-divider"></div>
+
+
+    <!-- abous-us  -->
+    <section class="container-fluid p-0">
+        <div class="about-box  align-items-stretch about-box--primary-yellow">
+            <div class="about-box__left">
+                <div class="about-box__img mx-auto my-auto">
+                    <img src="img/book1.png">
+                </div>
+            </div>
+            <div class="about-box__right">
+                <h1 class="text--skewed">Why US?</h1>
+                <div class="about-box__description my-lg-5 my-md-3 ">
+                    <h3 class="text--skewed">Over 10+ Years History</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+                    </p>
+                    <h3 class="text--skewed">Over Millions of Members</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+                    </p>
+                    <h3 class="text--skewed">Over Thousands of Staffs</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- divider -->
+    <div class="my-divider"></div>
+
+
+    <!-- testimonial  -->
+    <section class="container-fluid p-0">
+        <div class="container testimonial-box testimonial-box--primary-navy">
+            <h2 class="mx-auto">What Our Client Says</h2>
+            <div class="w-100"></div>
+            <div class="testimonial-box__dots gap-2">
+                <button class="dots--active"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+            <div class="testimonial-box__left">
+                <div class="testimonial-box__img">
+                    <img src="img/book1.png">
+                </div>
+            </div>
+            <div class="testimonial-box__right">
+                <blockquote class="fw-light fs-lg-3 fs-md-2 fs-sm-1 fs-1">
+                    “Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis laudantium vero omnis totam nisi, repellat temporibus non, placeat sint quae quaerat?”
+                </blockquote>
+                <div class="d-flex ">
+                    <span class="fw-bold fs-lg-4 fs-3" id="testimonal-author">Lorem Ipsum</span>
+                    <div class="d-flex ms-auto w-auto">
+                        <button class=" flex-fill w-100" id="t-prev"> Prev </button>
+                        <button class=" flex-fill w-100" id="t-next"> Next </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- divider  -->
+    <div class="my-divider"></div>
+
+
+    <!-- contact-us  -->
+    <section class="container-fluid">
+        <div class="container contact-box contact-box--primary-green">
+            <div class="contact-box__left">
+                <form action="" method="post" class="contact-box__form gap-lg-3 gap-md-2 gap-sm-1 gap-1">
+                    <h2 class="display-5 fw-bolder">Ready To Join Us?</h2>
+                    <h4 class="fw-medium">Become a Members and Explore More Benefits!</h4>
+                    <div class="contact-box__input gap-lg-3 gap-md-2 gap-sm-1 gap-1">
+                        <label for="contact-name" class="form-label"> </label>
+                        <input type="email" class="form-control" id="contact-name" placeholder="Your Name">
+                        <label for="contact-message" class="form-label"> </label>
+                        <textarea class="form-control" placeholder="Your Message"  id="contact-message" rows="3"></textarea>
+                    </div>
+            </div>
+            <div class="contact-box__right gap-lg-3 gap-md-2 gap-sm-1 gap-1">
+                <span class="fs-lg-4 fs-md-5 fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates laborum id eveniet temporibus explicabo tempore reprehenderit, minus, porro ex ipsam! Consectetur, necessitatibus!
+                </span>
+                <button class="button button--primary-green button--skewed" type="submit">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- divider  -->
+    <div class="my-divider"></div>
+
+
+    <!-- footer  -->
+    <footer class="container-fluid">
+        <div class="footer container row">
+            <div class="footer__content col-lg-6 gap-lg-3 gap-md-2 gap-sm-1 gap-1">
+                <h3>Online Library</h3>
+                <span>We'd love to hear from you. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto id et, repellat fuga maxime voluptas, quo, incidunt distinctio adipisci voluptatum ipsum delectus corrupti consectetur voluptates iure vitae soluta recusandae nemo.</span>
+                <span>Follow Us</span>
+                <div class="social-icon gap-1 my-1">
+                    <a href="#"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="bi bi-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer__content col-lg-3 col-md-6  col-12  gap-lg-3 gap-md-2 gap-sm-1 gap-1">
+                <h4>About Us</h4>
+                <a href="#" class="link-none-decoration text--skewed"><span>Home</span></a>
+                <a href="#" class="link-none-decoration text--skewed"><span>Service</span></a>
+                <a href="#" class="link-none-decoration text--skewed"><span>About Us</span></a>
+                <a href="#" class="link-none-decoration text--skewed"><span>Contact Us</span></a>
+  
+            </div>
+            <div class="footer__content col-lg-3 col-md-6 col-12 gap-lg-3 gap-md-2 gap-sm-1 gap-1">
+                <h4>Contact Us</h4>
+                <span>(+60) 000-111-2222</span>
+                <span>myemail@email.com</span>
+            </div>
+        </div>
+   
+        
+    </footer>
+
+ 
+    <script src="./js/script.js"></script>
+   
+    </body>
+</html>
